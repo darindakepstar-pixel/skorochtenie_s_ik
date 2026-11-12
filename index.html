@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ирина Крючкова — скорочтение и развитие мозга, Энгельс</title>
+<meta name="description" content="Скорочтение, подготовка к школе, развитие памяти, внимания и мышления для детей от 4 лет, подростков и взрослых. Авторские рабочие тетради. Энгельс.">
+<meta property="og:title" content="Развитие мозга с Ириной Крючковой">
+<meta property="og:description" content="Скорочтение и развитие памяти, внимания и мышления. Дети от 4 лет, подростки и взрослые. Авторские рабочие тетради.">
+<meta property="og:image" content="img/irina-portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F7F4FA; --ink:#352943; --plum:#5B4670; --soft:#6E6380;
+  --peach:#F3B58C; --peach-l:#FBE3D2; --mint:#A9D3C6; --mint-l:#DDEFE9;
+  --butter:#F6E19A; --butter-l:#FBF1CC; --lilac:#ECE4F3; --line:#E2DAEA; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.6 "Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:"Unbounded",sans-serif;font-weight:700;line-height:1.15;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(26px,4vw,40px);margin-bottom:14px}
+.intro{color:var(--soft);font-size:19px;max-width:36em;margin:0 0 36px}
+p{margin:0 0 1em}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--plum);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:88px 0}
+
+/* header */
+.top{position:sticky;top:0;z-index:10;background:rgba(247,244,250,.92);backdrop-filter:blur(8px);border-bottom:1px solid transparent}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;gap:16px}
+.logo{font-family:"Unbounded";font-weight:500;font-size:14px;text-decoration:none;line-height:1.25}
+.top nav{display:flex;gap:24px;font-size:16px;align-items:center}
+.top nav a{text-decoration:none;color:var(--soft)}
+.top nav a:hover{color:var(--ink)}
+.top nav .btn{padding:10px 18px;font-size:15px;color:#fff}
+
+.btn{display:inline-block;padding:15px 26px;border-radius:999px;font-weight:600;font-size:17px;text-decoration:none;border:2px solid var(--ink);transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--ink);color:#fff}
+.btn-ghost{background:transparent}
+.btn-peach{background:var(--peach);border-color:var(--peach);color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* hero */
+.hero{padding:40px 0 70px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(36px,5.6vw,66px);margin-bottom:22px}
+.hero h1 span{display:block;font-size:.5em;font-weight:500;color:var(--plum);margin-top:14px;line-height:1.3}
+.hero .lead{font-size:20px;color:var(--soft);max-width:30em;margin-bottom:30px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;padding:0;list-style:none}
+.chips li{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:15px}
+.portrait{position:relative;justify-self:center;width:min(430px,100%)}
+.portrait:before{content:"";position:absolute;inset:-18px 24px 30px -18px;background:var(--peach);border-radius:40px;transform:rotate(-3deg)}
+.portrait img{position:relative;border-radius:32px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.sticker{position:absolute;background:var(--white);border-radius:20px;padding:12px 16px;box-shadow:0 14px 30px -18px rgba(53,41,67,.5);font-size:14px;line-height:1.3}
+.sticker b{display:block;font-family:"Unbounded";font-size:20px}
+.st1{left:-26px;top:14%}
+.st2{right:-16px;bottom:8%;display:flex;align-items:center;gap:10px}
+.st2 img{width:54px;border-radius:12px}
+
+/* schulte band */
+.band{background:var(--ink);color:#fff;padding:72px 0}
+.band .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.band h2{color:#fff}
+.band p{color:#D9D0E3}
+.schulte{background:var(--white);color:var(--ink);border-radius:28px;padding:24px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}
+.cell{aspect-ratio:1;border:0;border-radius:12px;font:700 clamp(18px,3vw,26px) "Unbounded";color:var(--ink);cursor:pointer;transition:opacity .2s, transform .1s}
+.cell:active{transform:scale(.94)}
+.cell.c0{background:var(--peach-l)}.cell.c1{background:var(--mint-l)}.cell.c2{background:var(--butter-l)}.cell.c3{background:var(--lilac)}
+.cell.done{opacity:.22}
+.cell.miss{animation:shake .3s}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.status{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-size:16px;gap:12px}
+.status b{font-family:"Unbounded";font-weight:500}
+.reset{background:none;border:0;font:inherit;color:var(--plum);text-decoration:underline;cursor:pointer;padding:4px}
+.result{margin:12px 0 0;font-size:15px;color:var(--soft);min-height:1.6em}
+
+/* how */
+.how{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.how-photo{border-radius:32px;overflow:hidden;aspect-ratio:4/3.4}
+.how-photo img{width:100%;height:100%;object-fit:cover;object-position:30% 40%}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.fact{background:var(--white);border-radius:20px;padding:20px}
+.fact b{display:block;font-family:"Unbounded";font-size:26px;margin-bottom:4px}
+.fact span{color:var(--soft);font-size:16px;line-height:1.4;display:block}
+.fact:nth-child(1){background:var(--peach-l)}.fact:nth-child(2){background:var(--mint-l)}.fact:nth-child(3){background:var(--butter-l)}.fact:nth-child(4){background:var(--lilac)}
+
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 40px;margin-top:64px}
+.skill h3{font-size:19px;margin-bottom:8px}
+.skill p{color:var(--soft);font-size:17px;margin:0}
+.skill .dot{display:block;width:34px;height:8px;border-radius:8px;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:36px 0 0}
+.tags li{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px}
+
+/* programs */
+.programs-sec{background:var(--white)}
+.progs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prog{border-radius:24px;padding:26px;display:flex;flex-direction:column;background:var(--paper)}
+.prog:nth-child(6n+1){background:var(--peach-l)}.prog:nth-child(6n+2){background:var(--butter-l)}.prog:nth-child(6n+3){background:var(--mint-l)}
+.prog:nth-child(6n+4){background:var(--lilac)}.prog:nth-child(6n+5){background:var(--peach-l)}.prog:nth-child(6n+6){background:var(--mint-l)}
+.age{font-family:"Unbounded";font-weight:700;font-size:34px;line-height:1}
+.age small{font-size:14px;font-weight:500;color:var(--soft);margin-left:4px}
+.prog h3{font-family:"Golos Text";font-weight:600;font-size:20px;margin:14px 0 8px}
+.prog > p{color:var(--soft);font-size:16px}
+.meta{list-style:none;padding:0;margin:0 0 16px;font-size:15px;display:grid;gap:4px}
+.meta li:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--plum);margin-right:9px;vertical-align:middle}
+.price{margin-top:auto;font-weight:600;font-size:19px;padding-top:14px;border-top:1px solid rgba(53,41,67,.12)}
+.price span{display:block;font-weight:400;color:var(--soft);font-size:14px}
+details{margin-top:12px}
+summary{cursor:pointer;font-weight:600;font-size:15px;color:var(--plum);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:after{content:" +";}
+details[open] summary:after{content:" −"}
+details ul{margin:10px 0 0;padding-left:18px;font-size:15px;color:var(--ink)}
+details li{margin-bottom:4px}
+.note{margin-top:24px;font-size:16px;color:var(--soft)}
+
+/* workbooks */
+.books-sec{background:linear-gradient(var(--butter-l),var(--paper))}
+.books-head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:40px}
+.books-head img{width:170px;mix-blend-mode:multiply}
+.books{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.book{background:var(--white);border-radius:28px;padding:28px;display:grid;grid-template-columns:180px 1fr;gap:24px;box-shadow:0 20px 40px -32px rgba(53,41,67,.5)}
+.cover{border-radius:10px;box-shadow:0 12px 24px -12px rgba(53,41,67,.6);transform:rotate(-2deg)}
+.book h3{font-size:21px;margin-bottom:6px}
+.badge{display:inline-block;background:var(--ink);color:#fff;border-radius:999px;font-size:13px;font-weight:600;padding:4px 12px;margin-bottom:12px}
+.book p{font-size:16px;color:var(--soft)}
+.book ul{font-size:15px;padding-left:18px;margin:0 0 14px}
+.pages{display:flex;gap:10px;grid-column:1/-1}
+.pages a{flex:1;border-radius:8px;overflow:hidden;border:1px solid var(--line);transition:transform .15s}
+.pages a:hover{transform:translateY(-3px)}
+.book .btn{padding:12px 20px;font-size:15px}
+
+/* kindergartens */
+.kinder{background:var(--ink);color:#fff;border-radius:32px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px}
+.kinder h2{color:#fff}
+.kinder p{color:#D9D0E3}
+.kinder ul{margin:0;padding:0;list-style:none}
+.kinder li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.15);color:#EFE9F5}
+.kinder li:first-child{padding-top:0}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-photos{display:grid;grid-template-columns:1.4fr 1fr;gap:14px}
+.about-photos img{border-radius:24px;width:100%;height:100%;object-fit:cover}
+.about-photos .tall{grid-row:span 2;aspect-ratio:2/3;object-position:50% 30%}
+.about-photos .sq{aspect-ratio:1;object-position:40% 50%}
+.about p{font-size:19px}
+.quote{font-family:"Unbounded";font-weight:500;font-size:20px;line-height:1.4;border-left:4px solid var(--peach);padding-left:18px;margin:26px 0 0}
+
+/* contacts */
+.contacts{background:var(--peach-l);text-align:center}
+.contacts .sub{color:var(--soft);margin-bottom:30px}
+.contacts .btns{justify-content:center}
+.phone{display:block;font-family:"Unbounded";font-weight:500;font-size:clamp(22px,4vw,32px);text-decoration:none;margin:30px 0 8px}
+footer{padding:24px 0 36px;font-size:14px;color:var(--soft);text-align:center}
+
+@media (max-width:900px){
+  section{padding:64px 0}
+  .top nav a:not(.btn){display:none}
+  .hero .wrap,.band .wrap,.how,.about,.kinder,.books,.books-head{grid-template-columns:1fr}
+  .books-head img{display:none}
+  .portrait{width:min(360px,90%)}
+  .st1{left:-6px}.st2{right:-6px}
+  .progs{grid-template-columns:1fr 1fr}
+  .skills{grid-template-columns:1fr 1fr}
+  .kinder{padding:36px 24px;gap:28px}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .progs,.skills,.facts{grid-template-columns:1fr}
+  .book{grid-template-columns:1fr;padding:22px}
+  .book .cover{width:150px}
+  .btn{width:100%;text-align:center}
+  .top nav .btn{width:auto}
+  .logo{font-size:12px}
+  .schulte{padding:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#">Развитие мозга<br>с Ириной Крючковой</a>
+  <nav aria-label="Разделы">
+    <a href="#how">Занятия</a><a href="#programs">Программы</a><a href="#books">Тетради</a><a href="#about">Об Ирине</a>
+    <a class="btn btn-main" href="https://vk.me/uniqmindengels" target="_blank" rel="noopener">Записаться</a>
+  </nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Ирина Крючкова<span>педагог по скорочтению и развитию мозга</span></h1>
+    <p class="lead">Учу детей читать быстрее и понимать прочитанное. Развиваю память, внимание, мышление и речь — в игре, без зубрёжки и слёз. Занимаюсь с детьми от 4 лет, подростками и взрослыми.</p>
+    <div class="btns">
+      <a class="btn btn-main" href="https://vk.me/uniqmindengels" target="_blank" rel="noopener">Записаться на занятие</a>
+      <a class="btn btn-ghost" href="#programs">Программы и цены</a>
+    </div>
+    <ul class="chips"><li>Энгельс</li><li>Индивидуально и в группах</li><li>Игровой формат</li><li>Авторские тетради</li></ul>
+  </div>
+  <div class="portrait">
+    <img src="img/irina-portrait.jpg" alt="Ирина Крючкова" width="900" height="1200">
+    <div class="sticker st1"><b>6 программ</b>от 4 лет до взрослых</div>
+    <div class="sticker st2"><img src="img/j_wave.jpg" alt="">Джонни<br>помогает учиться</div>
+  </div>
+</div></div>
+
+<section class="band" aria-labelledby="try">
+  <div class="wrap">
+    <div>
+      <h2 id="try">Попробуйте сами</h2>
+      <p>Это таблица Шульте — одно из упражнений, которые мы делаем на занятиях. Она тренирует внимание и периферическое зрение, а это основа быстрого чтения.</p>
+      <p>Найдите числа от 1 до 25 по порядку как можно быстрее. Взрослые обычно справляются за 30–40 секунд. А вы?</p>
+    </div>
+    <div class="schulte">
+      <div class="grid" id="grid" role="group" aria-label="Таблица Шульте 5 на 5"></div>
+      <div class="status">
+        <span>Найдите: <b id="next">1</b></span>
+        <span>Время: <b id="time">0,0</b> с</span>
+        <button class="reset" id="reset" type="button">Перемешать</button>
+      </div>
+      <p class="result" id="result" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="how">
+      <div class="how-photo"><img src="img/irina-red.jpg" alt="Ирина Крючкова с детскими книгами"></div>
+      <div>
+        <h2>Как проходят занятия</h2>
+        <p class="intro" style="margin-bottom:22px">Каждое занятие — это игра, в которой упражнения постоянно сменяют друг друга: нейрогимнастика, чтение, задачи на логику, скороговорки, физминутки. Ребёнок не успевает устать и занимается с удовольствием.</p>
+        <div class="facts">
+          <div class="fact"><b>2 раза</b><span>в неделю, чтобы навык закреплялся</span></div>
+          <div class="fact"><b>45–60 мин</b><span>одно занятие, в зависимости от возраста</span></div>
+          <div class="fact"><b>10–16</b><span>разных упражнений за урок</span></div>
+          <div class="fact"><b>3–4 мес.</b><span>длится курс для школьников и взрослых</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="skill"><span class="dot" style="background:var(--peach)"></span><h3>Скорость чтения</h3><p>Ребёнок читает быстрее и не теряет смысл текста.</p></div>
+      <div class="skill"><span class="dot" style="background:var(--mint)"></span><h3>Понимание и пересказ</h3><p>Находит главное, отвечает на вопросы, пересказывает своими словами.</p></div>
+      <div class="skill"><span class="dot" style="background:var(--butter)"></span><h3>Все виды памяти</h3><p>Зрительная, слуховая, образная и двигательная. Мнемотехники для слов, чисел и стихов.</p></div>
+      <div class="skill"><span class="dot" style="background:var(--butter)"></span><h3>Внимание и самоконтроль</h3><p>Концентрация, усидчивость, меньше ошибок по невнимательности.</p></div>
+      <div class="skill"><span class="dot" style="background:var(--peach)"></span><h3>Мышление и речь</h3><p>Логика, воображение, словарный запас, чёткая дикция.</p></div>
+      <div class="skill"><span class="dot" style="background:var(--mint)"></span><h3>Работа двух полушарий</h3><p>Нейроупражнения и двуручное рисование для подготовки руки к письму.</p></div>
+    </div>
+    <ul class="tags">
+      <li>Нейрогимнастика</li><li>Двуручное рисование</li><li>Корректурные пробы</li><li>Таблицы Шульте</li><li>Тест Струпа</li><li>Мнемотехники</li><li>Графические диктанты</li><li>Зашумлённые тексты</li><li>Скороговорки и чистоговорки</li><li>Логические задачи</li><li>Физминутки со смыслом</li>
+    </ul>
+  </div>
+</section>
+
+<section id="programs" class="programs-sec">
+  <div class="wrap">
+    <h2>Программы и цены</h2>
+    <p class="intro">Для каждого возраста — своя программа. Нажмите «Что в программе», чтобы узнать подробности.</p>
+    <div class="progs">
+
+      <article class="prog">
+        <div class="age">4–5<small>лет</small></div>
+        <h3>Скорочтение и развитие памяти</h3>
+        <ul class="meta"><li>2 раза в неделю по 45 минут</li><li>10–12 упражнений на занятии</li></ul>
+        <details><summary>Что в программе</summary><ul>
+          <li>Нейроупражнения для работы обоих полушарий</li><li>Артикуляционные игры, скороговорки, стишки</li><li>Зрительная, слуховая и образная память</li><li>Концентрация и самоконтроль</li><li>Мелкая моторика и подготовка руки к письму</li><li>Буквы и цифры, первые шаги в счёте</li><li>Простые задачи, чтение и пересказ</li><li>Мнемотехники и физминутки</li></ul></details>
+        <div class="price">1 200 ₽ <span>за занятие</span></div>
+      </article>
+
+      <article class="prog">
+        <div class="age">5–6<small>лет</small></div>
+        <h3>Подготовка к школе</h3>
+        <ul class="meta"><li>2 раза в неделю по 45 минут</li><li>Учебные материалы предоставляются</li></ul>
+        <details><summary>Что в программе</summary><ul>
+          <li>Нейроупражнения и речевые игры</li><li>Все виды памяти, внимание и усидчивость</li><li>Мелкая моторика, подготовка руки к письму</li><li>Буквы и цифры, печатание, счёт и сравнение чисел</li><li>Геометрия: линейка и угольник</li><li>Чтение, понимание и пересказ</li><li>Окружающий мир и логические задачи</li></ul>
+          <p style="font-size:14px;margin:10px 0 0">Ученику понадобятся: пенал с карандашами, линейка и угольник, счётные палочки, тетрадь в крупную клетку, пособие О. Узоровой и Е. Нефёдовой «Практическое пособие по обучению детей чтению».</p></details>
+        <div class="price">1 200 ₽ <span>за занятие</span></div>
+      </article>
+
+      <article class="prog">
+        <div class="age">6–7<small>лет</small></div>
+        <h3>Скорочтение и развитие памяти</h3>
+        <ul class="meta"><li>2 раза в неделю по 45 минут</li><li>12–14 упражнений на занятии</li></ul>
+        <details><summary>Что в программе</summary><ul>
+          <li>Нейроупражнения для синхронизации полушарий</li><li>Скороговорки, чистоговорки, стихи</li><li>Зрительная, слуховая, образная и двигательная память</li><li>Двуполушарное рисование</li><li>Чтение и пересказ, счёт и примеры</li><li>Геометрический материал: фигуры, линии, измерения</li><li>Мнемотехники, анализ и обобщение</li></ul></details>
+        <div class="price">1 200 ₽ <span>за занятие</span></div>
+      </article>
+
+      <article class="prog">
+        <div class="age">8–9<small>лет</small></div>
+        <h3>Скорочтение и развитие памяти</h3>
+        <ul class="meta"><li>2 раза в неделю по 60 минут</li><li>12–16 упражнений, курс 3–4 месяца</li></ul>
+        <details><summary>Что в программе</summary><ul>
+          <li>5 техник скорочтения</li><li>Работа с текстом: понимание, анализ, пересказ</li><li>Устный счёт и таблица умножения</li><li>Мнемотехники для слов, чисел, дат и стихов</li><li>Управление вниманием и эмоциями</li><li>Двуполушарное рисование и логические задачи</li></ul></details>
+        <div class="price">1 500 ₽ <span>за занятие или 9 600 ₽ за абонемент на 8 занятий</span></div>
+      </article>
+
+      <article class="prog">
+        <div class="age">10–12<small>лет</small></div>
+        <h3>Скорочтение и развитие памяти</h3>
+        <ul class="meta"><li>2 раза в неделю по 60 минут</li><li>12–16 упражнений, курс 3–4 месяца</li></ul>
+        <details><summary>Что в программе</summary><ul>
+          <li>7 техник скорочтения</li><li>Словарные слова и сложные орфограммы</li><li>Мнемотехники для чисел, дат, стихов и иностранных слов</li><li>Разные типы текстов: анализ и пересказ</li><li>Дыхательные практики, визуализация, самомассаж</li><li>Психологическая поддержка: уверенность в себе и позитивный настрой</li></ul></details>
+        <div class="price">1 500 ₽ <span>за занятие или 9 600 ₽ за абонемент на 8 занятий</span></div>
+      </article>
+
+      <article class="prog">
+        <div class="age">13+<small>подростки и взрослые</small></div>
+        <h3>Курс скорочтения</h3>
+        <ul class="meta"><li>2 раза в неделю по 60 минут</li><li>Курс 3–4 месяца, домашние задания</li></ul>
+        <details><summary>Что в программе</summary><ul>
+          <li>Техники скорочтения и периферическое зрение</li><li>Работа против регрессий — без перечитывания</li><li>Подавление внутреннего проговаривания</li><li>Смысловая догадка и антиципация</li><li>Мнемотехники для дат, имён и чисел</li><li>Техники пересказа</li></ul>
+          <p style="font-size:14px;margin:10px 0 0">Результат: чтение в 2–3 раза быстрее без потери понимания.</p></details>
+        <div class="price">1 500 ₽ <span>за занятие или 9 600 ₽ за абонемент на 8 занятий</span></div>
+      </article>
+    </div>
+    <p class="note">Расписание подбираем при записи. Учебные пособия и тетради для занятий предоставляются.</p>
+  </div>
+</section>
+
+<section id="books" class="books-sec">
+  <div class="wrap">
+    <div class="books-head">
+      <div>
+        <h2>Рабочие тетради от Ирины Крючковой</h2>
+        <p class="intro" style="margin:0">Авторские тетради для занятий дома. Ребёнка ведёт по урокам Джонни — настоящий пёс Ирины. Вместе с ним малыш проводит лето у бабушки, ходит в лес и в зоопарк, едет на поезде к морю и по пути тренирует память, внимание и мышление.</p>
+      </div>
+      <img src="img/j_wave.jpg" alt="Джонни машет лапой">
+    </div>
+    <div class="books">
+      <article class="book">
+        <img class="cover" src="img/wb1-cover.jpg" alt="Обложка тетради для детей 5–7 лет">
+        <div>
+          <span class="badge">Скоро в продаже</span>
+          <h3>Развиваем мозг вместе с Джонни. 5–7 лет</h3>
+          <p>Часть 1: 8 уроков — месяц занятий по 2 урока в неделю. Большую часть инструкций читает взрослый.</p>
+          <ul><li>46 страниц, формат A4, для печати</li><li>Нейрогимнастика, таблицы Шульте, графические диктанты, лабиринты, загадки</li><li>Таблица результатов, диплом и ответы</li></ul>
+          <a class="btn btn-main" href="https://vk.me/uniqmindengels" target="_blank" rel="noopener">Узнать о покупке</a>
+        </div>
+        <div class="pages"><a href="img/wb1-p1.jpg" target="_blank"><img src="img/wb1-p1.jpg" alt="Страница тетради"></a><a href="img/wb1-p2.jpg" target="_blank"><img src="img/wb1-p2.jpg" alt="Страница тетради"></a><a href="img/wb1-p3.jpg" target="_blank"><img src="img/wb1-p3.jpg" alt="Страница тетради"></a></div>
+      </article>
+      <article class="book">
+        <img class="cover" src="img/wb2-cover.jpg" alt="Обложка тетради для детей 7–9 лет">
+        <div>
+          <span class="badge">Скоро в продаже</span>
+          <h3>Развиваем мозг вместе с Джонни. 7–9 лет</h3>
+          <p>Часть 1: те же 8 уроков и приключения, но задания сложнее — для детей, которые уже уверенно читают.</p>
+          <ul><li>45 страниц, формат A4, для печати</li><li>Тест Струпа, ребусы, магический квадрат, филворд, рассказы с вопросами</li><li>Таблица результатов, диплом и ответы</li></ul>
+          <a class="btn btn-main" href="https://vk.me/uniqmindengels" target="_blank" rel="noopener">Узнать о покупке</a>
+        </div>
+        <div class="pages"><a href="img/wb2-p1.jpg" target="_blank"><img src="img/wb2-p1.jpg" alt="Страница тетради"></a><a href="img/wb2-p2.jpg" target="_blank"><img src="img/wb2-p2.jpg" alt="Страница тетради"></a><a href="img/wb2-p3.jpg" target="_blank"><img src="img/wb2-p3.jpg" alt="Страница тетради"></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="kindergartens">
+  <div class="wrap">
+    <div class="kinder">
+      <div>
+        <h2>Для детских садов и центров</h2>
+        <p>Ирина проводит групповые занятия по развитию памяти, внимания и подготовке к чтению прямо на территории сада. Детям интересно, родители видят результат.</p>
+        <a class="btn btn-peach" href="https://vk.me/uniqmindengels" target="_blank" rel="noopener">Обсудить сотрудничество</a>
+      </div>
+      <ul>
+        <li>Программы для детей от 4 лет</li>
+        <li>Занятия несколько раз в неделю по вашему расписанию</li>
+        <li>Все материалы и тетради Ирина приносит сама</li>
+        <li>Работает как самозанятая, выдаёт чеки</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="about-photos">
+      <img class="tall" src="img/irina-chair.jpg" alt="Ирина Крючкова">
+      <img class="sq" src="img/books-hands.jpg" alt="Книги и материалы для занятий">
+      <img class="sq" src="img/irina-notebook.jpg" alt="Ирина Крючкова с тетрадью" style="object-position:70% 30%">
+    </div>
+    <div>
+      <h2>Об Ирине</h2>
+      <!-- Даша: сюда стоит добавить стаж, образование и сколько учеников прошло курсы -->
+      <p>Ирина Крючкова — педагог по скорочтению и развитию мозга из Энгельса. Занимается с малышами от 4 лет, школьниками, подростками и взрослыми, ведёт занятия в частных детских садах.</p>
+      <p>Она сама разрабатывает задания и выпускает авторские рабочие тетради. Главный помощник на уроках — пёс Джонни, кавалер-кинг-чарльз-спаниель, который стал героем её тетрадей.</p>
+      <p class="quote">Ребёнок учится лучше всего, когда ему интересно. Поэтому каждое занятие — игра.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contacts" id="contacts">
+  <div class="wrap">
+    <h2>Записаться на занятие</h2>
+    <p class="sub">Напишите или позвоните — подберём программу по возрасту и удобное время.</p>
+    <div class="btns">
+      <a class="btn btn-main" href="https://vk.me/uniqmindengels" target="_blank" rel="noopener">Написать во ВКонтакте</a>
+      <a class="btn btn-ghost" href="https://t.me/uniqmindengels" target="_blank" rel="noopener">Канал в Telegram</a>
+    </div>
+    <a class="phone" href="tel:+79170272886">+7 (917) 027-28-86</a>
+    <p class="sub" style="margin:0">Энгельс, Саратовская область</p>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">Развитие мозга с Ириной Крючковой · <a href="https://vk.com/uniqmindengels" target="_blank" rel="noopener">vk.com/uniqmindengels</a></div></footer>
+
+<script>
+(function(){
+  const grid=document.getElementById('grid'),nextEl=document.getElementById('next'),timeEl=document.getElementById('time'),result=document.getElementById('result');
+  let next=1,start=0,timer=null;
+  const fmt=ms=>(ms/1000).toFixed(1).replace('.',',');
+  function build(){
+    clearInterval(timer);timer=null;next=1;start=0;nextEl.textContent='1';timeEl.textContent='0,0';result.textContent='';
+    const nums=[...Array(25)].map((_,i)=>i+1).sort(()=>Math.random()-.5);
+    grid.innerHTML='';
+    nums.forEach(n=>{const b=document.createElement('button');b.type='button';b.className='cell c'+Math.floor(Math.random()*4);
+      b.textContent=n;b.setAttribute('aria-label','Число '+n);b.addEventListener('click',()=>tap(b,n));grid.appendChild(b);});
+  }
+  function tap(b,n){
+    if(n!==next){b.classList.remove('miss');void b.offsetWidth;b.classList.add('miss');return}
+    if(next===1){start=Date.now();timer=setInterval(()=>timeEl.textContent=fmt(Date.now()-start),100)}
+    b.classList.add('done');next++;
+    if(next>25){clearInterval(timer);const ms=Date.now()-start;timeEl.textContent=fmt(ms);nextEl.textContent='✓';
+      result.textContent='Готово за '+fmt(ms)+' с. С тренировкой это время заметно сокращается.';}
+    else nextEl.textContent=next;
+  }
+  document.getElementById('reset').addEventListener('click',build);build();
+})();
+</script>
+</body>
+</html>
